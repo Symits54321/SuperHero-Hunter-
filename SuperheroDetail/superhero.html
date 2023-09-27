@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperheroDetail page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    
+</head>
+<body>
+<!-- NAV PAGE  -->
+  <section class="nav sticky-top"><h1><span class="badge bg-secondary hero-name">
+    <!------******---- HERO TITLE  ----------*******-->
+  </span></h1>
+  </section>
+<!-- MAIN PAGE  -->
+  <section class="main">
+<!-- LEFT PART / TOP PART       -->
+    <div class="part1">
+      <div class="image" >
+        <!--------------- HERO IMAGE  ---------------------->
+      </div>
+      <button type="button" class="btn btn-danger my-3 fav">
+        Add favourite
+      </button>
+
+      
+    </div>
+<!-- RIGHT PART / BOTTOM PART     -->
+    <div class="part2">
+      <!-- ACCORDIAN (by Bootstrap) (for-- DESCRIPTION(BIO), COMICS, EVENTS, SERIES, STORIES) -->
+
+      <div class="accordion" id="accordionExample">
+
+           <!--------------- Accordian 1  ---------->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Bio 
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body description">
+             <!-- DESCRIPTION  -->
+            </div>
+          </div>
+        </div>
+
+
+           <!------------ Accordian 2  ------------>
+           
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Comics
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body comics">
+              <ul class="list-group">
+              <!-- COMICS LIST  -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+           <!------------ Accordian 3  ------------->
+           
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Events
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body events">
+              <ul class="list-group">
+               <!-- EVENT LIST  -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+           <!----------- Accordian 4  -------------->
+           
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Series
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body series">
+              <ul class="list-group">
+               <!-- SERIES LIST  -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+           <!--------------- Accordian 5  ------------->
+           
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Stories
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body stories">
+              <ul class="list-group">
+               <!-- STORIES LIST  -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script  src="script.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script> 
+    
+</body>
+</html>

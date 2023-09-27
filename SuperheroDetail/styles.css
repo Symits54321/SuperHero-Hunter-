@@ -1,0 +1,140 @@
+:root{
+
+    /* --bordercolor1:rgb(241, 177, 177);
+    --bordercolor2:rgb(209, 203, 203);
+    --bordercolor3:rgb(224, 178, 245);
+    --bordercolor4:rgb(165, 221, 165);
+    --bordercolor5:rgb(255, 255, 186);
+    --bordercolor6:rgb(255, 166, 166);  */
+
+
+
+    --bg-searchtheme1:#fce8fc;
+    --bg-searchtheme2:#893eeb;
+    --bg-searchtheme3:#fcbf19;
+    --bg-fav-sticker:red;
+    --bg-backbutton:orange;
+     
+
+    --bg-1:#d676fb;
+    --bg-2:#faffaf;
+    --bg-3:#ffafea;
+    --bg-4:#eafffd;
+
+
+}
+
+body{
+    background-color: var(--bg-2)!important;
+    height:100%;
+    padding:0;
+    
+}
+
+
+.nav{
+
+    width:100vw;
+    height:auto;
+    background-color: var(--bg-1);
+    border:1px solid var(--bordercolor3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    
+}
+
+.main{
+
+    width:100vw;
+    height:auto;
+    padding:15px;
+
+    display:flex;
+  
+    justify-content: space-around;
+
+    align-items:flex-start;
+
+    border:1px solid var(--bordercolor3);
+    background-color: var(--bg-2);
+}
+
+.part1{
+
+    width:40vw;
+    min-height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items:center;
+    padding:15px;
+    border:1px solid var(--bordercolor4);
+}
+
+.image{
+    width:70%;
+    height:auto;
+    min-height:30vw;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    
+    border:1px solid var(--bordercolor6);
+}
+
+.button{
+    border:1px solid var(--bordercolor6);
+}
+
+.part2{
+    padding-top: 80px;
+    width:40%;
+    height:auto;
+    min-height: 200px;
+    border:1px solid var(--bordercolor4);
+}
+
+.accordion-header>button{
+    background-color: var(--bg-3); 
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    font-style: normal;
+   
+}
+.accordion-body{
+    background-color: var(--bg-4); 
+}
+
+.accordion-body>ul>li{
+    background-color: var(--bg-4); 
+}
+
+
+
+@media (max-width: 992px) {
+
+.main{
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    align-items:center;
+}
+
+.part1,.part2{
+    margin-top: 15px;
+    width:80vw;
+}
+
+.part2{
+    padding-top: 10px;
+}
+
+.image{
+    width:70vw;
+    min-height:70vw;
+}
+    
+}

@@ -1,0 +1,242 @@
+
+:root{
+
+    /* --bordercolor1:rgb(241, 177, 177);
+    --bordercolor2:rgb(209, 203, 203);
+    --bordercolor3:rgb(224, 178, 245);
+    --bordercolor4:rgb(165, 221, 165);
+    --bordercolor5:rgb(255, 255, 186);
+    --bordercolor6:rgb(255, 166, 166);  */
+
+
+
+    --bg-searchtheme1:#fce8fc;
+    --bg-searchtheme2:#893eeb;
+    --bg-searchtheme3:#fcbf19;
+    --bg-fav-sticker:red;
+    --bg-backbutton:orange;
+     
+
+    --bg-1:#2f1452;
+
+
+}
+
+
+*{
+    color: rgb(250, 253, 255);
+    box-sizing: border-box;
+    /*font-family: sans-serif;*/
+    
+}
+
+#tumbnailtest{
+    background-size: cover;
+}
+
+
+body{
+    background-color: rgb(252, 246, 246);
+    height: 100vh;
+}
+
+/*----------------- Nav ----------- */
+
+#nav{
+    width:100%;
+    min-height:20vh;
+    border:1px solid var(--bordercolor1);
+    background-image:linear-gradient(135deg, rgb(0, 0, 0),rgb(97, 85, 85));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+
+}
+#app-name{
+    width:auto;
+    color:aliceblue;
+    border:1px solid var(--bordercolor5);
+    
+}
+
+#api-progress{
+   min-width:50px;
+    height:50px;
+    padding: 10px;
+    color:white;
+    background: transparent;
+   /* border:1px solid white; */
+    position:absolute;
+    right:5px;
+    top:5px;
+}
+
+/* -- Navbar -- */
+
+#nav-bottom{
+    width:100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid var(--bordercolor4);
+    justify-content: space-evenly;
+    align-items: center;
+}
+#search-bar{
+    width:60vw;
+    height:40px;
+    border:1px solid var(--bordercolor6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+   
+}
+
+#search-results{
+    /* min-height:30px;
+    height: auto;
+    width:100%;
+    background-color: #fce8fc;
+    position:absolute;
+    top:50px; */
+
+    /* transform: translateY(-10px); */
+}
+
+
+#search-results>ul>li>p{
+    color: black;
+}
+
+#favourite-list{
+    min-width:90px;
+    min-height:30px;
+    border:1px solid var(--bordercolor6);
+   
+}
+
+.fav-list{
+  
+    width:50vw;
+    min-height: 0;
+    
+}
+
+.fav-list>li{
+    
+    display: flex;
+    padding: 5px 5px;
+    
+}
+
+.fav-list>li>a{
+  display: flex;
+  align-items: center;
+}
+.fav-list>li>a:hover{
+    background-color: #aca7a7;
+}
+
+.fav-list>li>a>span{
+    color: black;
+
+}
+
+
+.fav-list>li>.delete{
+    width:50px;
+    height:50px;
+    color: black;
+    
+    background-image: url(Images/removeOff.svg);
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 3px;
+    /* border: 1px solid black; */
+}
+
+.fav-list>li>.delete:hover{
+    background-image: url(Images/removeOff.svg); 
+    background-color: rgb(219, 143, 143);
+    border-radius: 3px;
+}
+
+.fav-list>li>.delete:active{
+    background-image: url(Images/removeOn.svg); 
+}
+
+.fav-list>li>.image{
+    width:60px;
+    height:50px;
+    /* background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg);
+    */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    /* border: 1px solid black;  */
+    border-radius: 2px;
+}
+
+#toogle-page{
+    width:400px;
+    height:100px;
+    background-color: #fcbf19;
+    border: 2px solid var(--bg-searchtheme1);
+    display:flex;
+    justify-content: space-evenly;
+}
+/*------------ Main --------- */
+
+#main{
+    background-color: var(--bg-1);
+}
+
+.card{
+    width: 15rem;
+   
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(90, 88, 88);
+    color: aliceblue;
+}
+
+
+
+
+
+
+/* ----------- Responsive-------- */
+
+
+@media (max-width: 540px) {
+
+
+    html{
+        font-size: 79%;
+    }
+
+
+    .card{
+        width: 40vw;
+    
+    }
+
+    .fav-list{
+  
+        width:70vw;
+    }
+
+
+
+
+  }
