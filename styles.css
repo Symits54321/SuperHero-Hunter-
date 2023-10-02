@@ -231,6 +231,12 @@ body{
         font-size: 79%;
     }
 
+     #app-name>img{
+        width: 30vw;
+        height: auto;
+    }
+    
+
 
     .card{
         width: 40vw;
