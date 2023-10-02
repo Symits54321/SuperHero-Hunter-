@@ -61,6 +61,12 @@ body{
     
 }
 
+#app-name>img{
+    width: 20vw;
+    height: auto;
+}
+
+
 #api-progress{
    min-width:50px;
     height:50px;
