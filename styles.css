@@ -202,6 +202,11 @@ body{
     border-radius: 2px;
 }
 
+.favlist>span{
+    white-space:wrap;
+    
+}
+
 #toogle-page{
     width:400px;
     height:100px;
@@ -298,9 +303,6 @@ body{
        font-size: 70%;
     }
 
-    #nav{
-        flex-direction: row;
-    }
 
     #search-bar{
         width:50vw;
@@ -315,18 +317,15 @@ body{
 
     .input-group>input{
         height:100%;
+        
     }
 
     #favourite-list>div>button{
 
-        height:18px !important;
-        padding: 1px !important;
+        height:20px !important;
+        padding: 1px 5px !important;
     }
-     
-    #nav-bottom{
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items:end;
-    }
-      
+
+   
+ 
   }
