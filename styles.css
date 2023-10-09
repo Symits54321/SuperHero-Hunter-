@@ -52,7 +52,7 @@ body{
     flex-wrap:nowrap;
     flex-direction: row;
     justify-content: space-around;
-    position: relative;
+  
 
 }
 #app-name{
@@ -207,14 +207,6 @@ body{
     
 }
 
-#toogle-page{
-    width:400px;
-    height:100px;
-    background-color: #fcbf19;
-    border: 2px solid var(--bg-searchtheme1);
-    display:flex;
-    justify-content: space-evenly;
-}
 /*------------ Main --------- */
 
 #main{
