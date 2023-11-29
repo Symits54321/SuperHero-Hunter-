@@ -413,7 +413,7 @@ function allInputClick(e){
                 }
 
 
-                // Replace 'yourURL' with  URL you want to open in a new tab
+                //  URL you want to open in a new tab with id
                 const urlToOpen = `./SuperheroDetail/superhero.html?id=${clicked.id}`;
                 // Open the URL in a new tab
                 window.open(urlToOpen, '_blank');
