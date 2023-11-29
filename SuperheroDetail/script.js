@@ -67,7 +67,8 @@ async function displayHeroPage(){
    heroName.textContent =  SuperheroData.name;
    // adding image
    let imageurl = `${SuperheroData.thumbnail.path}.jpg` ;
-   heroImage.style.backgroundImage = `url(${imageurl})`;
+  // heroImage.style.backgroundImage = `url(${imageurl})`;
+   heroImage.src = imageurl;
    // adding id to favbtn
    favbtn.setAttribute('id',`${SuperheroData.id}`);
    //adding description
