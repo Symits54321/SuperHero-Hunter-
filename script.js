@@ -399,7 +399,7 @@ function allInputClick(e){
       
         
         // --- Superherodetailpage Open 
-        if  ((clicked.parentNode.classList.contains('card') || clicked.parentNode.classList.contains('card-body') || clicked.parentNode.classList.contains('favlist')) && !clicked.classList.contains('fav') && !clicked.classList.contains('delete') ){ 
+        if  ((clicked.classList.contains('card') || clicked.parentNode.classList.contains('card') || clicked.parentNode.classList.contains('card-body') || clicked.parentNode.classList.contains('favlist')) && !clicked.classList.contains('fav') && !clicked.classList.contains('delete') ){ 
 
           console.log("Superhero Clicked");
         
@@ -414,7 +414,7 @@ function allInputClick(e){
 
 
                 // Replace 'yourURL' with the URL you want to open in a new tab
-                const urlToOpen = `./SuperheroDetail/superhero.html?id=${clicked.parentNode.id}`;
+                const urlToOpen = `./SuperheroDetail/superhero.html?id=${clicked.id}`;
                 // Open the URL in a new tab
                 window.open(urlToOpen, '_blank');
 

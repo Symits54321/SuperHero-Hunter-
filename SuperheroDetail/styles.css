@@ -122,6 +122,7 @@ body{
 .accordion-body{
     background-color: var(--bg-accordian-list); 
     box-shadow: 0px 0px 12px 1px inset;
+    color:white;
 
 }
 
@@ -172,8 +173,9 @@ body{
 }
 
 .image{
-    width:70vw;
-    min-height:70vw;
+    width:auto;
+    max-width: 100%;
+    max-height:70vw;
 }
     
 }
