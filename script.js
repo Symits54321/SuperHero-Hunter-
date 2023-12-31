@@ -155,11 +155,11 @@ async function displayHompage(characters){
 
               console.log(`total characters = ${characters.length}`);
 let length;
-
-if(characters.length<30){
+//no. of characters to be displayed per page
+if(characters.length<28){
   length=characters.length;
 }else{
-  length=30;
+  length=28;
 }
 
  // refreshing mainpage
@@ -177,10 +177,10 @@ if(characters.length<30){
     let desc=characters[i].description;
 
     card.setAttribute('id', id);
-
+    card.style.backgroundImage = `url(${imageUrl})`;
     card.innerHTML = `
 
-    <img src=${imageUrl} class="card-img-top" alt="...">
+  
     <div class="card-body" id="${id}" >
       <h5 class="card-title mt-auto " style="color:white;">${name}</h5>
       <p class="card-text"></p>
