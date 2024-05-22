@@ -153,7 +153,7 @@ async function addfav(characterId){
    // If favorates is empty then add new array or else parse the array 
            let storage = storageFetched ? JSON.parse(storageFetched) : [];
   
-   // Add new meal in storage
+   // Add new superhero in storage
             if(!storage.includes(characterId)){
                         storage.push(characterId);
             }else{

@@ -2,6 +2,8 @@
 
 Welcome to SuperHero Hunter JS javascript test project 
 
+![Homepage](./screenshot/homepage.JPG)
+
 URL:- https://symits54321.github.io/SuperHero-Hunter-/
 
 Hello my name is Sumit....in this project i used Marvel API by registering in their website:- https://developer.marvel.com/signup ....
