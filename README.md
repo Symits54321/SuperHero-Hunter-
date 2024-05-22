@@ -1,5 +1,5 @@
 # SuperHero-Hunter-JS
-![Homepage](./screenshot/homepage_new.JPG)
+
 Welcome to SuperHero Hunter JS javascript test project 
 
 ![Homepage](./screenshot/homepage.JPG)
